@@ -1,0 +1,20 @@
+// utilities
+@import './utilities/fonts';
+@import './utilities/variables';
+
+// base
+@import './base/main.scss';
+
+// layout
+@import './layout/header';
+@import './layout/nav';
+@import './layout/footer';
+
+// sections
+@import './layout/sections/about';
+@import './layout/sections/contact';
+@import './layout/sections/education';
+@import './layout/sections/hero';
+@import './layout/sections/projects';
+@import './layout/sections/services';
+
