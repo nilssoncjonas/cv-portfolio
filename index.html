@@ -29,43 +29,58 @@
 			referrerpolicy="no-referrer"
 		/>
 		<!-- Favicon -->
-		<link
-			rel="shortcut icon"
-			href="./src/assets/ico/favicon.ico"
-			type="image/x-icon"
-		/>
+		<link rel="shortcut icon" type="image/x-icon" />
 	</head>
 	<body>
 		<header>
 			<nav>
 				<h1>Jonas Nilsson</h1>
+				<span class="fa-sharp fa-solid fa-bars" id="menuToggle"></span>
 
-				<ul>
-					<li>Hem</li>
-					<li>Mina Projekt</li>
-					<li>Tjänster</li>
-					<li>Utbildning</li>
-					<li>Om Mig</li>
-					<li>Kontakta Mig</li>
-				</ul>
+				<div class="menu__wrap" id="menuWrap">
+					<ul class="menu">
+						<li>Hem</li>
+						<li>Mina Projekt</li>
+						<li>Tjänster</li>
+						<li>Utbildning</li>
+						<li>Om Mig</li>
+						<li>Kontakta Mig</li>
+					</ul>
+				</div>
 			</nav>
 		</header>
 
 		<main>
-			<section id="hero"></section>
+			<!-- <section id="hero" class="hero">
+				<div class="hero__bg">
+					<img src="public/img/hero/hero@1x.webp" alt="" />
+				</div>
+				<div class="hero__text">
+					<h2>Jonas Nilsson <span>Front End Developer</span></h2>
+					<p>
+						Som front end utvecklare kan jag erbjuda en mängd olika tjänster
+						beroende på ditt behov. Jag kan hjälpa till att bygga anpassade
+						webbplatser och applikationer från grunden, eller att uppdatera och
+						förbättra befintliga lösningar. Jag kan också hjälpa till med att
+						skapa responsiv design och användarvänliga gränssnitt som fungerar
+						sömlöst på olika enheter och plattformar.
+					</p>
+					<span><a href="#contact">Kontakta Mig!</a></span>
+				</div>
+			</section> -->
 
-			<section id="projects"></section>
+			<!-- <section id="projects">projects</section>
 
-			<section id="services"></section>
+			<section id="services">services</section>
 
-			<section id="education"></section>
+			<section id="education">education</section>
 
-			<section id="about"></section>
+			<section id="about">about</section>
 
-			<section id="contact"></section>
+			<section id="contact">contact</section> -->
 		</main>
 
-		<footer>
+		<!-- <footer>
 			<ul>
 				<li>Kontakt</li>
 				<li>Copyright</li>
@@ -75,7 +90,7 @@
 				<li>LinkedIn</li>
 				<li>Mail</li>
 			</ul>
-		</footer>
+		</footer> -->
 
 		<script type="module" src="/src/main.ts"></script>
 	</body>

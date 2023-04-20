@@ -1,0 +1,23 @@
+.menu__wrap  {
+	background-color: $grey;
+	width: 100vw;
+	padding: 1rem 1.2rem;
+	position: fixed;
+	z-index: 2;
+	top: 63px;
+	right: 0;
+	bottom: 0;
+	transform: translateX(100%); //100% == !show, 0 == show
+	transition: transform 0.3s ease-in-out;
+
+}
+
+.menu {
+	list-style: none;
+	li {
+		padding: 1rem;
+		margin: 0.5rem;
+		text-align: center;
+		text-transform:uppercase;
+	}
+}

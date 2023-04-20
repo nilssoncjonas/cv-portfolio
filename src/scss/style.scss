@@ -2,12 +2,11 @@
 @import './utilities/fonts';
 @import './utilities/variables';
 
-// base
-@import './base/main.scss';
 
 // layout
 @import './layout/header';
 @import './layout/nav';
+@import './layout/menu';
 @import './layout/footer';
 
 // sections
@@ -18,3 +17,5 @@
 @import './layout/sections/projects';
 @import './layout/sections/services';
 
+// base
+@import './base/main.scss';

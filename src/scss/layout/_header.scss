@@ -1,0 +1,21 @@
+header {
+	background-color: $grey;
+	color: $text;
+	width: 100vw;
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		span {
+			padding: 1rem;
+			font-size: 1.8rem;
+		}
+	}
+}
+
+h1 {
+	padding: 1rem;
+	padding-bottom: 1.2rem;
+}
