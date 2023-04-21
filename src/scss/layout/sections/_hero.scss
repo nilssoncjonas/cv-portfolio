@@ -1,10 +1,9 @@
 .hero {
+	@include flexCenter;
 	position: relative;
 	width: 100vw;
 	height: calc(100vh - 63px);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
 }
 
 .hero::before {
@@ -18,14 +17,14 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	filter: brightness(60%);
+	filter: brightness(40%);
 }
 
 .hero__text {
 	text-align: center;
 	position: relative;
 	color: #fff;
-	background-color: rgba(0, 0, 0, 0.5);
+	// background-color: rgba(0, 0, 0, 0.5);
 	padding: 2rem;
 	max-width: 630px;
 	h2 {
