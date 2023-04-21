@@ -3,10 +3,21 @@ import './scss/style.scss'
 // DOM querySelector
 const menuToggle = document.querySelector('#menuToggle') as HTMLSpanElement
 const menuWrap = document.querySelector('#menuWrap') as HTMLDivElement
+const menuItems = Array.from(document.querySelectorAll('.menuItem')) as HTMLLIElement[]
 const body = document.querySelector('#body') as HTMLBodyElement
 
-// menuToggle
-menuToggle.addEventListener('click', () => {
+
+// functions
+const toggleMenu = () => {
 	menuWrap.classList.toggle('show')
 	body.classList.toggle('fixed')
-})
+}
+
+// evenlisteners
+menuToggle.addEventListener('click', toggleMenu)	
+
+menuItems.forEach(
+	function(menuItem) {
+		menuItem.addEventListener('click', toggleMenu)
+	}
+)
