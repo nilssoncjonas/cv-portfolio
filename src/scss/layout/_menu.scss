@@ -21,3 +21,23 @@
 		text-transform:uppercase;
 	}
 }
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 1024px) {
+
+	#menuToggle {
+		display: none;
+	}
+	.menu__wrap {
+		transform: translateX(0);
+		position: static;
+		max-width: fit-content;
+	}
+	.menu {
+		display: flex;
+		justify-content: right;
+	}
+}
