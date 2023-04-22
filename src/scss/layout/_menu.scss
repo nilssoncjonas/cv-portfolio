@@ -53,9 +53,18 @@
 		transform: translateX(0);
 		position: static;
 		max-width: fit-content;
+		padding: 0;
+		margin-right: 1rem;
 	}
 	.menu {
+		// @include flexCenter;
+		flex-direction: initial;
+		height: initial;
+		transform: translateX(0);
 		display: flex;
 		justify-content: right;
+		li {
+			padding: 0.25rem;
+		}
 	}
 }
