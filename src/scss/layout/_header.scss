@@ -6,14 +6,78 @@ header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		span {
-			padding: 1rem;
-			font-size: 1.8rem;
-		}
 	}
 }
 
 h1 {
 	padding: 1rem;
 	padding-bottom: 1.2rem;
+}
+
+// burger menu
+.burger__wrap {
+	padding: 1rem 0.5rem 0rem ;
+	input {
+		display: none;
+	}
+	
+	label {
+		position: relative;
+		width: 50px;
+		height: 40px;
+		display: inline-block;
+		cursor: pointer;
+		@include flexCenter;
+		
+		div,
+		div:before,
+		div:after {
+			background: $text;
+			position: absolute;
+			height: 4px;
+			width: 30px;
+			border-radius: 50px;
+			transition: all 0.5s;
+		}
+	}
+	
+	div:first-child {
+		top: 0px;
+	}
+	div:nth-child(2) {
+		top: 10px;
+	}
+	div:nth-child(3) {
+		top: 20px;
+	}
+}
+
+#menuBurger + label {
+	div:first-child {
+		transition: top 0.15s 0.15s, transform 0.15s;
+	}
+	div:nth-child(2),
+	div:nth-child(3) {
+		transition: top 0.15s 0.15s, transform 0.15s;
+	}
+}
+
+#menuBurger:checked + label {
+	div:first-child {
+		top: 10px;
+		transform: rotate(45deg);
+		transition: top 0.15s, transform 0.15s 0.15s;
+	}
+	div:nth-child(2),
+	div:nth-child(3) {
+		top: 10px;
+		transform: rotate(-45deg);
+		transition: top 0.15s, transform 0.15s 0.15s;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.burger__wrap {
+		display: none;
+	}
 }
