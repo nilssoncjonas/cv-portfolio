@@ -1,0 +1,64 @@
+#knowledge {
+	max-width: 768px;
+	margin: 4rem auto;
+	padding: 1rem 0.5rem;
+	h3 {
+		font-size: 2rem;
+		display: block;
+	}
+}
+* {
+	outline: 1px solid cornflowerblue;
+}
+.knowledge__container {
+
+}
+.knowledge__wrap {
+
+	h4 {
+
+	}
+	img {
+		width: 100px;
+	}
+	p {
+
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#knowledge {
+		max-width: none;
+		h3 {
+			max-width: 850px;
+			margin: 0 auto;
+		}
+	}
+	.knowledge__container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		max-width: 850px;
+		margin: 0 auto;
+	}
+	.knowledge__wrap {
+		max-width: 240px;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#knowledge {
+		h3 {
+			max-width: 1200px;
+		}
+	}
+	.knowledge__container {
+		max-width: 1200px;
+	}
+	.knowledge__wrap {
+		max-width: 350px;
+	}
+}
