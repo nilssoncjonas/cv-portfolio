@@ -2,8 +2,9 @@
 	@include flexCenter;
 	position: relative;
 	width: 100vw;
-	height: calc(100vh - 63px);
+	height: calc(100vh - 57px);
 	z-index: 2;
+	// @include boxShadow;
 }
 
 .hero::before {
@@ -24,15 +25,14 @@
 	text-align: center;
 	position: relative;
 	color: #fff;
-	// background-color: rgba(0, 0, 0, 0.5);
 	padding: 2rem;
 	max-width: 630px;
-	h2 {
+	h1 {
 		font-size: 3rem;
 		span {
-			font-size: 2rem;
+			font-size: 0.5em;
 			display: block;
-			margin-bottom: 1.5rem;
+			margin-bottom: 0.25em;
 		}
 	}
 
