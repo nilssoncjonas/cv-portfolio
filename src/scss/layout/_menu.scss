@@ -1,14 +1,10 @@
-* {
-	// outline: 1px solid cornflowerblue;
-}
-
 .menu__wrap {
 	background-color: $grey;
 	width: 100vw;
 	padding: 1rem 1.2rem;
 	position: fixed;
 	z-index: 3;
-	top: 63px;
+	top: 57px;
 	right: 0;
 	bottom: 0;
 	transform: translateX(100%); //100% == !show, 0 == show

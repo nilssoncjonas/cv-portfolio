@@ -2,25 +2,30 @@
 	max-width: 500px;
 	margin: 4rem auto;
 	padding: 1rem 0.5rem;
-	h3 {
+	h2 {
+		// margin-bottom: 1rem;
 		font-size: 2rem;
 		display: block;
 	}
 }
 
 .project__wrap {
+	@include boxShadow;
 	max-width: 500px;
 	margin: 0 auto;
-	border-bottom: 1px solid #000;
+	border-radius: 10px;
 	img {
 		width: 90%;
 		display: block;
 		margin: 2rem auto;
+		padding-top: 0.95rem;
 	}
-	h4 {
+	h3 {
 		font-size: 1.5rem;
+		padding: 0 0.5rem;
 	}
 	p {
+		padding: 0 0.5rem;
 		margin-top: 1rem;
 	}
 	span {
@@ -39,9 +44,10 @@
 @media screen and (min-width: 768px) {
 	#projects {
 		max-width: none;
-		h3 {
+		h2 {
 			max-width: 850px;
 			margin: 0 auto;
+			margin-bottom: 1rem;
 		}
 	}
 	.project__container {
