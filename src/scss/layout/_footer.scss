@@ -16,7 +16,6 @@ footer {
 	@include flexCenter;
 	justify-content: space-around;
 	div {
-
 		ul {
 			@include flexCenter;
 			flex-direction: column;
@@ -25,7 +24,8 @@ footer {
 			list-style: none;
 			li {
 				margin-top: 0.5rem;
-				a, & a:visited {
+				a,
+				& a:visited {
 					font-size: 1rem;
 					text-transform: uppercase;
 					color: $text;
@@ -36,6 +36,42 @@ footer {
 					font-size: 2rem;
 					padding: 0.75rem;
 					border-radius: 50px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	footer {
+		div {
+			img {
+				padding-top: 2rem;
+				width: 300px;
+			}
+		}
+	}
+	.footer__wrap {
+		div {
+			width: 40%;
+			ul {
+				@include flexCenter;
+				flex-direction: row;
+				flex-wrap: wrap;
+				row-gap: 1rem;
+				column-gap: 1rem;
+				justify-content: space-around;
+				height: initial;
+				li {
+					a {
+						span:hover {
+							transform: scale(1.5);
+							transition: all 0.3s ease-in-out;
+						}
+						span:not(:hover) {
+							transition: all 0.3s ease-in-out;
+						}
+					}
 				}
 			}
 		}

@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	// outline: 1px solid red;
-	// outline: 1px solid $grey;
+	outline: 1px solid $grey;
 	font-family: 'Linux';
 }
 main {
@@ -54,5 +54,8 @@ main {
 		padding: 0.25rem 0.5rem;	
 		background-color: $text;
 		@include boxShadow;
+		&:hover {
+			transform: scale(1.3);
+		}
 	}
 }
