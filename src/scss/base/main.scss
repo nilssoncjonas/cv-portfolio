@@ -3,9 +3,10 @@
 	margin: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	// outline: 1px solid $text;
 	// outline: 1px solid red;
-	outline: 1px solid $grey;
 	font-family: 'Linux';
+	transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -48,19 +49,19 @@ main {
 }
 
 .bttop {
-	color: $grey;
+	color: var(--clr-btn-bg);
 	
 	&:visited {
-		color: $grey;
+		color: var(--clr-btn-bg);
 	}
 	span {
 		transition: transform 0.3s ease-in-out;
 		margin-right: 0.5rem;
 		font-size: 2rem;
-		border: 2px solid $grey;
+		border: 2px solid var(--clr-btn-bg);
 		border-radius: 50px;
 		padding: 0.25rem 0.5rem;	
-		background-color: $text;
+		background-color: var(--clr-body-bg);
 		@include boxShadow;
 		&:hover {
 			transform: scale(1.3);

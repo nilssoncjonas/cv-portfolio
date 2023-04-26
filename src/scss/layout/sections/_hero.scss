@@ -1,10 +1,9 @@
 .hero {
 	@include flexCenter;
 	position: relative;
-	width: 100vw;
+	width: 100%;
 	height: calc(100vh - 57px);
 	z-index: 2;
-	// @include boxShadow;
 }
 
 .hero::before {
