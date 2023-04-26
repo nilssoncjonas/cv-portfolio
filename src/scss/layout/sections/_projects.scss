@@ -4,6 +4,7 @@
 	padding: 1rem 0.5rem;
 	h2 {
 		// margin-bottom: 1rem;
+		color: var(--clr-heading);
 		font-size: 2rem;
 		display: block;
 	}
@@ -21,6 +22,7 @@
 		padding-top: 0.95rem;
 	}
 	h3 {
+		color: var(--clr-heading);
 		font-size: 1.5rem;
 		padding: 0 0.5rem;
 	}
@@ -37,6 +39,7 @@
 
 		a {
 			@include button;
+			background-color: var(--clr-btn-bg);
 		}
 	}
 }

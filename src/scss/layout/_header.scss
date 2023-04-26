@@ -32,7 +32,7 @@ header {
 		div,
 		div:before,
 		div:after {
-			background: $text;
+			background: var(--clr-burger);
 			position: absolute;
 			height: 4px;
 			width: 30px;

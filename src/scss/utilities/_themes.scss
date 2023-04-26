@@ -1,0 +1,65 @@
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.color__picker > fieldset  {	
+		border: 0;
+		display: flex;
+		gap: 0.5rem;
+		width: fit-content;
+		// background: #fff;
+		padding: 1rem;
+		
+	}
+	
+	.color__picker input[type="radio"] {
+	appearance: none;
+	width: 0.75rem;
+	height: 0.75rem;
+	outline: 2px solid var(--radio-color, currentColor);
+	outline-offset: 3px;
+	// border-radius: 0%;
+	margin-right: 0.75rem;
+	&:last-child {
+		margin-right: 0;
+
+	}
+
+	&:checked {
+		background-color: var(--radio-color);
+	}
+}
+
+#grey {
+	--radio-color: hsl(0, 0%, 87%);
+}
+#vite_purple {
+	--radio-color: hsl(280, 99%, 60%);
+}
+#docker_blue {
+	--radio-color: hsl(206, 85%, 54%);
+}
+#react_blue {
+	--radio-color: hsl(193, 93%, 72%);
+}
+#vue_green {
+	--radio-color: hsl(153, 48%, 46%);
+}
+
+#git_orange {
+	--radio-color: hsl(9, 77%, 54%);
+}
+#sass_pink {
+	--radio-color: hsl(330, 44%, 57%);
+}
+#javascript_yellow {
+	--radio-color: hsl(54, 86%, 51%);
+}
+
+

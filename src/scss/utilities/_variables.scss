@@ -1,2 +1,93 @@
-$grey: #222222;
-$text: #dddddd;
+$grey: hsl(0, 0%, 13%);
+$text: hsl(0, 0%, 87%);
+
+:root {
+--clr-body-bg: hsl(0, 0%, 87%);
+	--clr-burger: hsl(0, 0%, 87%);
+		--clr-link: hsl(0, 0%, 87%);
+	--clr-paragraph: hsl(0, 0%, 13%);
+	--clr-heading: hsl(0, 0%, 13%);
+	--clr-footer: hsl(0, 0%, 87%);
+	--clr-btn-bg: hsl(0, 0%, 13%);
+}
+
+:root:has(#vite_purple:checked) {
+--clr-body-bg: hsl(280, 99%, 90%);
+	--clr-burger: hsl(280, 99%, 60%);
+	--clr-link: hsl(280, 99%, 60%);
+	--clr-paragraph: hsla(280, 99%, 30%);
+	--clr-heading: hsl(280, 99%, 40%);
+	--clr-footer: hsl(280, 99%, 40%);
+	--clr-btn-bg: hsla(280, 99%, 30%);
+}
+
+:root:has(#docker_blue:checked) {
+	--clr-body-bg: hsl(206, 85%, 90%);
+	--clr-burger: hsl(206, 85%, 54%);
+	--clr-link: hsl(206, 85%, 60%);
+	--clr-paragraph: hsl(206, 85%, 30%);
+	--clr-heading: hsl(206, 85%, 40%);
+	--clr-footer: hsl(206, 85%, 40%);
+	--clr-btn-bg: hsl(206, 85%, 30%);
+}
+:root:has(#react_blue:checked) {
+	--clr-body-bg: hsl(193, 93%, 90%);
+	--clr-burger: hsl(193, 93%, 72%);
+	--clr-link: hsl(193, 93%, 60%);
+	--clr-paragraph: hsl(193, 93%, 30%);
+	--clr-heading: hsl(193, 93%, 40%);
+	--clr-footer: hsl(193, 93%, 40%);
+	--clr-btn-bg: hsl(193, 93%, 30%);
+}
+:root:has(#vue_green:checked) {
+	--clr-body-bg: hsl(153, 48%, 90%);
+	--clr-burger: hsl(153, 48%, 46%);
+	--clr-link: hsl(153, 48%, 60%);
+	--clr-paragraph: hsl(153, 48%, 30%);
+	--clr-heading: hsl(153, 48%, 40%);
+	--clr-footer: hsl(153, 48%, 40%);
+	--clr-btn-bg: hsl(153, 48%, 30%);
+}
+
+:root:has(#git_orange:checked) {
+	--clr-body-bg: hsl(9, 77%, 90%);
+	--clr-burger: hsl(9, 77%, 54%);
+	--clr-link: hsl(9, 77%, 60%);
+	--clr-paragraph: hsl(9, 77%, 30%);
+	--clr-heading: hsl(9, 77%, 40%);
+	--clr-footer: hsl(9, 77%, 40%);
+	--clr-btn-bg: hsl(9, 77%, 30%);
+}
+:root:has(#sass_pink:checked) {
+	--clr-body-bg: hsl(330, 44%, 90%);
+	--clr-burger: hsl(330, 44%, 57%);
+	--clr-link: hsl(330, 44%, 60%);
+	--clr-paragraph: hsl(330, 44%, 30%);
+	--clr-heading: hsl(330, 44%, 40%);
+	--clr-footer: hsl(330, 44%, 40%);
+	--clr-btn-bg: hsl(330, 44%, 30%);
+}
+:root:has(#javascript_yellow:checked) {
+	--clr-body-bg: hsl(54, 86%, 90%);
+	--clr-burger: hsl(54, 86%, 51%);
+	--clr-link: hsl(54, 86%, 60%);
+	--clr-paragraph: hsl(54, 86%, 30%);
+	--clr-heading: hsl(54, 86%, 40%);
+	--clr-footer: hsl(54, 86%, 40%);
+	--clr-btn-bg: hsl(54, 86%, 30%);
+}
+
+
+
+$vite_purple: #bc34fe;
+$php_purple: #7175aa;
+$docker_blue:#2496ed;
+$react_blue: #77defa;
+$vue_green: #3eaf7c;
+$mongodb_green: #00e15f;
+$svelte_orange: #f23900;
+$laravel_red: #e4392c;
+$git_orange: #e44c30;
+$sanity_red: #e76d63;
+$sass_pink: #c26191;
+$javascript_yellow: #edd718;

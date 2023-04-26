@@ -1,6 +1,6 @@
 footer {
 	background-color: $grey;
-	color: $text;
+	color: var(--clr-footer);	
 	padding-bottom: 2rem;
 	text-align: center;
 	div {
@@ -11,7 +11,7 @@ footer {
 	}
 }
 
-.footer__wrap {
+.footer__wrap {	
 	padding: 2rem 0;
 	@include flexCenter;
 	justify-content: space-around;
@@ -28,7 +28,7 @@ footer {
 				& a:visited {
 					font-size: 1rem;
 					text-transform: uppercase;
-					color: $text;
+					color: var(--clr-footer);
 					text-decoration: none;
 				}
 				span {

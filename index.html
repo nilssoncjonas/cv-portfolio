@@ -45,6 +45,29 @@
 
 				<div class="menu__wrap" id="menuWrap">
 					<ul class="menu">
+						<li>
+							<form class="color__picker" action="">
+								<fieldset>
+									<legend  class="visually-hidden">Pick a color scheme!</legend>
+									<label for="grey" class="visually-hidden">Grey</label>
+									<input type="radio" name="theme" id="grey" checked >
+									<label for="vite_purple" class="visually-hidden">Vite Purple</label>
+									<input type="radio" name="theme" id="vite_purple" >
+									<label for="docker_blue" class="visually-hidden">Docker Blue</label>
+									<input type="radio" name="theme" id="docker_blue" >
+									<label for="react_blue" class="visually-hidden">React Blue</label>
+									<input type="radio" name="theme" id="react_blue" >
+									<label for="vue_green" class="visually-hidden">Vue Green</label>
+									<input type="radio" name="theme" id="vue_green" >
+									<label for="git_orange" class="visually-hidden">Git Orange</label>
+									<input type="radio" name="theme" id="git_orange" >
+									<label for="sass_pink" class="visually-hidden">Sass Pink</label>
+									<input type="radio" name="theme" id="sass_pink" >
+									<label for="javascript_yellow" class="visually-hidden">Javascript Yellow</label>
+									<input type="radio" name="theme" id="javascript_yellow" >
+								</fieldset>
+							</form>
+						</li>
 						<li><a class="menuItem" href="#body">Hem</a></li>
 						<li><a class="menuItem" href="#projects">Utvalda Projekt</a></li>
 						<li><a class="menuItem" href="#services">Tjänster</a></li>
@@ -68,7 +91,7 @@
 			<section id="hero" class="hero">
 				<div class="hero__text">
 					<h1>Jonas Nilsson <span>Front End Developer</span></h1>
-					<p>
+					<p id="pHero">
 						Som front end utvecklare kan jag erbjuda en mängd olika tjänster
 						beroende på ditt behov. Jag kan hjälpa till att bygga anpassade
 						webbplatser och applikationer från grunden, eller att uppdatera och
@@ -269,7 +292,7 @@
 
 		<footer>
 			<div>
-				<img src="/public/img/jn_logo.png" alt="Jonas Nilsson">
+				<img src="/img/jn_logo.png" alt="Jonas Nilsson">
 			</div>
 			<div class="footer__wrap">
 				<div>

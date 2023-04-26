@@ -7,6 +7,14 @@
 	outline: 1px solid $grey;
 	font-family: 'Linux';
 }
+
+body {
+	background-color: var(--clr-body-bg);
+	p {
+		color: var(--clr-paragraph)
+	}
+}
+
 main {
 	position: relative;
 }
