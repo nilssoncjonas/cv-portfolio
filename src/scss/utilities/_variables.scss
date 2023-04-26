@@ -4,7 +4,7 @@ $text: hsl(0, 0%, 87%);
 :root {
 --clr-body-bg: hsl(0, 0%, 87%);
 	--clr-burger: hsl(0, 0%, 87%);
-		--clr-link: hsl(0, 0%, 87%);
+	--clr-link: hsl(0, 0%, 87%);
 	--clr-paragraph: hsl(0, 0%, 13%);
 	--clr-heading: hsl(0, 0%, 13%);
 	--clr-footer: hsl(0, 0%, 87%);
@@ -14,7 +14,7 @@ $text: hsl(0, 0%, 87%);
 :root:has(#vite_purple:checked) {
 --clr-body-bg: hsl(280, 99%, 90%);
 	--clr-burger: hsl(280, 99%, 60%);
-	--clr-link: hsl(280, 99%, 60%);
+	--clr-link: #bb34fe;
 	--clr-paragraph: hsla(280, 99%, 30%);
 	--clr-heading: hsl(280, 99%, 40%);
 	--clr-footer: hsl(280, 99%, 40%);
@@ -33,7 +33,7 @@ $text: hsl(0, 0%, 87%);
 :root:has(#docker_blue:checked) {
 	--clr-body-bg: hsl(206, 85%, 90%);
 	--clr-burger: hsl(206, 85%, 54%);
-	--clr-link: hsl(206, 85%, 60%);
+	--clr-link: #42a5f0;
 	--clr-paragraph: hsl(206, 85%, 30%);
 	--clr-heading: hsl(206, 85%, 40%);
 	--clr-footer: hsl(206, 85%, 40%);
@@ -52,7 +52,7 @@ $text: hsl(0, 0%, 87%);
 :root:has(#react_blue:checked) {
 	--clr-body-bg: hsl(193, 93%, 90%);
 	--clr-burger: hsl(193, 93%, 72%);
-	--clr-link: hsl(193, 93%, 60%);
+	--clr-link: #3acff8;
 	--clr-paragraph: hsl(193, 93%, 30%);
 	--clr-heading: hsl(193, 93%, 40%);
 	--clr-footer: hsl(193, 93%, 40%);
@@ -71,7 +71,7 @@ $text: hsl(0, 0%, 87%);
 :root:has(#vue_green:checked) {
 	--clr-body-bg: hsl(153, 48%, 90%);
 	--clr-burger: hsl(153, 48%, 46%);
-	--clr-link: hsl(153, 48%, 60%);
+	--clr-link: #68ca9e;
 	--clr-paragraph: hsl(153, 48%, 30%);
 	--clr-heading: hsl(153, 48%, 40%);
 	--clr-footer: hsl(153, 48%, 40%);
@@ -90,7 +90,7 @@ $text: hsl(0, 0%, 87%);
 :root:has(#git_orange:checked) {
 	--clr-body-bg: hsl(9, 77%, 90%);
 	--clr-burger: hsl(9, 77%, 54%);
-	--clr-link: hsl(9, 77%, 60%);
+	--clr-link: #e8624a;
 	--clr-paragraph: hsl(9, 77%, 30%);
 	--clr-heading: hsl(9, 77%, 40%);
 	--clr-footer: hsl(9, 77%, 40%);
@@ -109,7 +109,7 @@ $text: hsl(0, 0%, 87%);
 :root:has(#sass_pink:checked) {
 	--clr-body-bg: hsl(330, 44%, 90%);
 	--clr-burger: hsl(330, 44%, 57%);
-	--clr-link: hsl(330, 44%, 60%);
+	--clr-link: #c66c99;
 	--clr-paragraph: hsl(330, 44%, 30%);
 	--clr-heading: hsl(330, 44%, 40%);
 	--clr-footer: hsl(330, 44%, 40%);
@@ -128,7 +128,7 @@ $text: hsl(0, 0%, 87%);
 :root:has(#javascript_yellow:checked) {
 	--clr-body-bg: hsl(54, 86%, 90%);
 	--clr-burger: hsl(54, 86%, 51%);
-	--clr-link: hsl(54, 86%, 60%);
+	--clr-link: #f1df41;
 	--clr-paragraph: hsl(54, 86%, 30%);
 	--clr-heading: hsl(54, 86%, 40%);
 	--clr-footer: hsl(54, 86%, 40%);
@@ -142,4 +142,26 @@ $text: hsl(0, 0%, 87%);
 	--clr-heading: hsl(54, 86%, 40%);
 	--clr-footer: hsl(54, 86%, 40%);
 	--clr-btn-bg: hsl(54, 86%, 30%);
+}
+
+.vite_purple_filter {
+	filter: invert(35%) sepia(61%) saturate(7499%) hue-rotate(268deg) brightness(80%) contrast(99%);
+}
+.docker_blue_filter {
+	filter: invert(50%) sepia(84%) saturate(838%) hue-rotate(181deg) brightness(80%) contrast(88%);
+}
+.react_blue_filter {
+	filter: invert(74%) sepia(13%) saturate(3562%) hue-rotate(159deg) brightness(150%) contrast(95%);
+}
+.vue_green_filter {
+	filter: invert(74%) sepia(63%) saturate(287%) hue-rotate(99deg) brightness(130%) contrast(86%);
+}
+.git_orange_filter {
+	filter: invert(52%) sepia(54%) saturate(2714%) hue-rotate(331deg) brightness(75%) contrast(92%);
+}
+.sass_pink_filter {
+	filter: invert(81%) sepia(24%) saturate(6508%) hue-rotate(290deg) brightness(64%) contrast(81%);
+}
+.javascript_yellow_filter {
+	filter: invert(79%) sepia(58%) saturate(494%) hue-rotate(5deg) brightness(280%) contrast(100%);
 }

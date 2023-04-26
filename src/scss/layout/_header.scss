@@ -77,6 +77,15 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
+	header {
+		nav {
+			img {
+				width: 300px;
+				padding: 1rem;
+			}
+		}
+	}
+
 	.burger__wrap {
 		display: none;
 	}

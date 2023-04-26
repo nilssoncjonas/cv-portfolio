@@ -6,7 +6,8 @@ const menuWrap = document.querySelector('#menuWrap') as HTMLDivElement
 const menu = document.querySelector('.menu') as HTMLUListElement
 const menuItems = Array.from(document.querySelectorAll('.menuItem')) as HTMLLIElement[]
 const body = document.querySelector('#body') as HTMLBodyElement
-
+const logoHeader = document.querySelector('#logoHeader') as HTMLImageElement
+const logoFooter = document.querySelector('#logoFooter') as HTMLImageElement
 const bttopEl = document.querySelector('#test') as HTMLSpanElement
 
 const colorThemes = document.querySelectorAll<HTMLInputElement>('[name="theme"]')
@@ -60,6 +61,7 @@ colorThemes.forEach(theme => {
 		storeTheme(theme.id)
 		// fallback for no :has() support
 		document.documentElement.className = theme.id
+		setLogoFilter(theme.id)
 	})
 })
 
@@ -74,6 +76,14 @@ const setTheme = () => {
 	})
 	// fallback for no :has() support
 	document.documentElement.className = activeTheme!
+	setLogoFilter(activeTheme!)
+}
+
+const setLogoFilter = (theme: string) => {
+	logoHeader.classList.value = ''
+	logoFooter.classList.value = ''
+	logoFooter.classList.add(`${theme}_filter`)
+	logoHeader.classList.add(`${theme}_filter`)
 }
 
 setTheme()
