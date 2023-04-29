@@ -16,8 +16,8 @@
 
 .color__picker input[type="radio"] {
 	appearance: none;
-	width: 1rem;
-	height: 1rem;
+	width: 0.8rem;
+	height: 0.8rem;
 	outline: 2px solid var(--radio-color, currentColor);
 	outline-offset: 3px;
 	&:last-child {

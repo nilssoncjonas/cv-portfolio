@@ -54,11 +54,10 @@
 		margin-right: 1rem;
 	}
 	.menu {
+		margin-left: 1rem;
 		flex-direction: initial;
 		height: initial;
 		transform: translateX(0);
-		// display: flex;
-		// justify-content: right;
 		li {
 			padding: 0.25rem;
 			&:first-child {

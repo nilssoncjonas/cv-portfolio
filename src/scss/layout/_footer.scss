@@ -65,8 +65,9 @@ footer {
 				li {
 					a {
 						span:hover {
-							transform: scale(1.5);
+							transform: scale(1.2);
 							transition: all 0.3s ease-in-out;
+							box-shadow: 0px 0px 50px var(--clr-link);
 						}
 						span:not(:hover) {
 							transition: all 0.3s ease-in-out;
