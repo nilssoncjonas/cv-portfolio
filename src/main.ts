@@ -1,17 +1,24 @@
 import './scss/style.scss'
+import {fetchProject} from "./api";
+import {IProject} from "./interface";
 
 // DOM querySelector
+
+// mobile menu
 const menuToggle = document.querySelector('#menuBurger') as HTMLSpanElement
 const menuWrap = document.querySelector('#menuWrap') as HTMLDivElement
 const menu = document.querySelector('.menu') as HTMLUListElement
 const menuItems = Array.from(document.querySelectorAll('.menuItem')) as HTMLLIElement[]
 const body = document.querySelector('#body') as HTMLBodyElement
+// back-to-top
+const bttopEl = document.querySelector('#test') as HTMLSpanElement
+// theme
 const logoHeader = document.querySelector('#logoHeader') as HTMLImageElement
 const logoFooter = document.querySelector('#logoFooter') as HTMLImageElement
-const bttopEl = document.querySelector('#test') as HTMLSpanElement
-
 const colorThemes = document.querySelectorAll<HTMLInputElement>('[name="theme"]')
-const timeStamp = () => new Date().toLocaleString("sv-SE", { timeZone: "Europe/Stockholm" });
+// Projects
+const projectsContainerEL = document.querySelector('#project__container') as HTMLDivElement
+const timeStamp = () => new Date().toLocaleString("sv-SE", {timeZone: "Europe/Stockholm"});
 
 // menu 
 const toggleMenu = () => {
@@ -34,7 +41,7 @@ menuItems.forEach(
 let scrollPos = 0;
 
 const checkPosition = () => {
-	let windowY = window.scrollY;
+	let windowY: number = window.scrollY;
 	if (windowY < scrollPos) {
 		// Scrolling UP
 		bttopEl.classList.add('bttop__show');
@@ -55,7 +62,7 @@ window.addEventListener('scroll', checkPosition);
 const storeTheme = (theme: string) => {
 	localStorage.setItem('theme', theme)
 }
-
+// eventListener for radiobuttons
 colorThemes.forEach(theme => {
 	theme.addEventListener('click', () => {
 		storeTheme(theme.id)
@@ -86,5 +93,39 @@ const setLogoFilter = (theme: string) => {
 	logoHeader.classList.add(`${theme}_filter`)
 }
 
+// runs when the page loads
 setTheme()
 
+// Fetching project from aoi
+
+const getProjects = async () => {
+	// show loading icon
+	try {
+		const projects = await fetchProject()
+		console.log('api status: '+ projects.status)
+		renderProjects(projects.data)
+
+	} catch {
+		console.log('could not communicate with api')
+	}
+// 	hide loading icon
+}
+// runs when the page loads
+getProjects()
+
+// render project to DOM
+const renderProjects = (data: any) => {
+	console.log(data)
+
+	projectsContainerEL.innerHTML = data.map( proj => `
+		<div class="project__wrap">
+			<img src="https://via.placeholder.com/600x400.jpeg?text=img" alt=""/>
+			<h3>${proj.title}</h3>
+			<p>${proj.description}</p>
+			<span>
+				<a href="${proj.link.github}">GitHub Repo</a>
+				<a href="${proj.link.live}">Live länk</a>
+			</span>
+		</div>
+	`).join('')
+}
