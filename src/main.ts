@@ -119,7 +119,7 @@ const renderProjects = (data: any) => {
 
 	projectsContainerEL.innerHTML = data.map( proj => `
 		<div class="project__wrap">
-			<img src="https://via.placeholder.com/600x400.jpeg?text=img" alt=""/>
+			<img src="${proj.image}" alt=""/>
 			<h3>${proj.title}</h3>
 			<p>${proj.description}</p>
 			<span>
