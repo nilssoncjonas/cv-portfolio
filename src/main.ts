@@ -1,6 +1,6 @@
 import './scss/style.scss'
 import {fetchProject} from "./api";
-import {IProject} from "./interface";
+import { IProject } from './interface';
 
 // DOM querySelector
 
@@ -114,7 +114,7 @@ const getProjects = async () => {
 getProjects()
 
 // render project to DOM
-const renderProjects = (data: any) => {
+const renderProjects = (data: IProject[]) => {
 	console.log(data)
 
 	projectsContainerEL.innerHTML = data.map( proj => `
