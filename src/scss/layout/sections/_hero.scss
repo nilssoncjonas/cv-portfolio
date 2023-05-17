@@ -27,7 +27,7 @@
 	padding: 2rem;
 	max-width: 630px;
 	h1 {
-		color: $text;
+		color: var(--clr-link);
 		font-size: 3rem;
 		text-shadow: 0px 0px 50px var(--clr-link);
 		span {
