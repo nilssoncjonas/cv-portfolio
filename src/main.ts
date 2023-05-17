@@ -25,7 +25,7 @@ const toggleMenu = () => {
 	console.log('togglemenu @', timeStamp())
 	menu.classList.toggle('show')
 	menuWrap.classList.toggle('show')
-	body.classList.toggle('fixed')
+	// body.classList.toggle('fixed')
 }
 
 menuToggle.addEventListener('click', toggleMenu)
