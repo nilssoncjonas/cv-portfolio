@@ -9,7 +9,7 @@ const menuToggle = document.querySelector('#menuBurger') as HTMLSpanElement
 const menuWrap = document.querySelector('#menuWrap') as HTMLDivElement
 const menu = document.querySelector('.menu') as HTMLUListElement
 const menuItems = Array.from(document.querySelectorAll('.menuItem')) as HTMLLIElement[]
-const body = document.querySelector('#body') as HTMLBodyElement
+// const body = document.querySelector('#body') as HTMLBodyElement
 // back-to-top
 const bttopEl = document.querySelector('#test') as HTMLSpanElement
 // theme
